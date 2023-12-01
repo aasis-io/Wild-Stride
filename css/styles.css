@@ -101,7 +101,8 @@ hr {
   color: var(--white-color);
   transition: 0.3s ease-in-out;
 }
-.button:hover {
+.button:hover,
+button:hover {
   background-color: var(--button-color);
   color: var(--white-color);
 }
@@ -1571,7 +1572,7 @@ Testimonial Start
 
 .news-letter form input {
   border: none;
-  height: 45px;
+  height: 50px;
   width: 300px;
   color: var(--text-color);
   padding: 0 4px;
@@ -1583,7 +1584,7 @@ Testimonial Start
 .news-letter form i {
   font-size: 22px;
   margin-right: 6px;
-  color: #929292;
+  color: var(--accent-color);
 }
 
 .news-letter form button {
@@ -1597,7 +1598,14 @@ Testimonial Start
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 0 4px 4px 0;
+  transition: 0.3s ease-in-out;
 }
+
+.news-letter form button:hover {
+  background-color: var(--button-color);
+  color: var(--white-color);
+}
+
 .news-letter form button i {
   color: var(--white-color);
 }

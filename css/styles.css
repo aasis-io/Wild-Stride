@@ -1263,7 +1263,9 @@ About US
 Testimonial Start
 ========*/
 
-/* ============================ Section Testimonial===================================== */
+/* ============================
+ Section Testimonial
+ ===================================== */
 
 .site {
   display: flex;
@@ -1517,7 +1519,9 @@ Testimonial Start
   }
 }
 
-/* News Letter Start */
+/* ============================ 
+News Letter
+===================================== */
 
 .news-letter {
   background-color: var(--background-color);
@@ -1648,4 +1652,112 @@ input::placeholder {
     border-radius: 4px;
     justify-content: center;
   }
+}
+
+/* ============================
+ Blogs
+ ===================================== */
+
+.blogs .container {
+  max-width: 1320px;
+}
+
+.meta-view {
+  display: flex;
+  place-items: flex-start;
+}
+
+@media only screen and (min-width: 769px) {
+  .blogs .title-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.blog-item {
+  display: flex;
+  gap: 14px;
+  place-items: center;
+  margin-top: 2rem;
+}
+
+.blog-item figure {
+  max-width: 280px;
+  transition: 0.5s ease-in-out;
+}
+
+.blog-item > figure > a {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
+.blog-item > figure > a > img {
+  width: 100%;
+  transition: all 0.3s;
+  border-radius: 0.25rem;
+}
+.blog-item > figure > a:hover img {
+  transform: scale(1.05);
+}
+
+.blog-item figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.blog-item ul {
+  display: flex;
+  gap: 32px;
+}
+.blog-item ul > li {
+  font-weight: 600;
+  color: var(--piction-color);
+}
+
+.blog-item ul > li:last-child {
+  position: relative;
+}
+.blog-item ul > li:last-child:before {
+  position: absolute;
+  content: "|";
+  left: -19px;
+}
+
+.blog-item .blog-header > a {
+  color: var(--dark-accent);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.blogs .read-button {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .meta-view {
+    margin-top: 1rem;
+  }
+  .blog-item {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .blog-item {
+    display: block;
+    max-width: 410px;
+    margin: 1.5rem auto 0 auto;
+  }
+  .blog-item figure {
+    max-width: 410px;
+    margin-bottom: 1rem;
+  }
+
+  /* .blog-item figcaption,
+  .blog-item ul,
+  .blogs .read-button {
+    justify-content: center;
+  } */
 }

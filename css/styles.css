@@ -1135,7 +1135,7 @@ button:hover {
   gap: 6px;
   margin: 0.3rem 2px 0 2px;
 }
-.outbound{
+/* .outbound{
   position: relative;
 }
 
@@ -1168,7 +1168,7 @@ button:hover {
 }
 
 /* top left*/
-.ribbon {
+/* .ribbon {
   top: -6px;
   left: -6px;
 }
@@ -1189,7 +1189,7 @@ button:hover {
   right: -24px;
   top: 40px;
   transform: rotate(-45deg);
-}
+} */ 
 
 
 .package-header {
@@ -1708,7 +1708,7 @@ input::placeholder {
     position: inherit;
   }
   .news-letter form button {
-    padding: 12px 12px 12px 8px;
+    padding: 14px 12px 14px 8px;
     border-radius: 4px;
     justify-content: center;
   }
@@ -1828,6 +1828,42 @@ input::placeholder {
 }
 
 /* ============================
- Blogs
+ Associated Links =================
  ===================================== */
- 
+ .association-wrap{
+  position: relative;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+ }
+ .association-wrap .head{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
+ }
+ .association-wrap .head > span{
+  padding: 12px 24px;
+  background-color: var(--white-color);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark-accent);
+ }
+ .association-items{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+ }
+
+ .association-items > span{
+  max-height: 80px;
+  width: 100%;
+  max-width: 92px;
+  text-align: center;
+ }
+
+ .association-items > span > img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }

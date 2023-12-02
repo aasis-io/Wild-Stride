@@ -111,9 +111,9 @@ new Splide(".splide", {
     mouse: 400,
     touch: 10,
   },
-  // pagination: false,
+  pagination: false,
+  lazyLoad: true | "nearby",
 }).mount();
-
 
 /*=============================
 Owl Carousel Initializer
@@ -146,7 +146,6 @@ $(document).ready(function () {
     },
   });
 });
-
 
 /*=============================
 Testimonial Slider Initializer

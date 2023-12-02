@@ -1993,11 +1993,11 @@ input::placeholder {
   object-fit: cover;
 }
 
-.trip-advisor{
+.trip-link{
   margin: 1.5rem 0 1rem 0;
 }
 
-.trip-advisor > .links{
+.trip-link > .links{
   margin-left: 1rem;
 }
 

@@ -22,6 +22,7 @@
   --light-clr: #ced6e0;
   --dark-clr: #2f3542;
   --box-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
+  --red-color: #FF0000;
 }
 
 * {
@@ -119,6 +120,9 @@ button:hover {
   }
 }
 
+.title {
+  margin: 0 8px;
+}
 .title span {
   color: var(--piction-color);
   text-transform: uppercase;
@@ -1019,7 +1023,7 @@ button:hover {
 #demos .owl-carousel .item {
   height: 100%;
   background: none;
-  padding: 0;
+  padding-top: 6px;
 }
 
 .owl-carousel.owl-drag .owl-item {
@@ -1036,7 +1040,7 @@ button:hover {
 .owl-nav {
   position: absolute;
   top: -86px;
-  right: 24px;
+  right: 20px;
 }
 .owl-theme .owl-nav [class*="owl-"] {
   color: #fff;
@@ -1131,6 +1135,62 @@ button:hover {
   gap: 6px;
   margin: 0.3rem 2px 0 2px;
 }
+.outbound{
+  position: relative;
+}
+
+.ribbon {
+  width: 150px;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid var(--accent-color);
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 260px;
+  padding: 5px 0;
+  background-color: var(--piction-color);
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 500 14px/1 'Poppins', sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+/* top left*/
+.ribbon {
+  top: -6px;
+  left: -6px;
+}
+.ribbon::before,
+.ribbon::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon::before {
+  top: 2px;
+  right: 43px;
+}
+.ribbon::after {
+  bottom: 7px;
+  left: -4px;
+}
+.ribbon span {
+  right: -24px;
+  top: 40px;
+  transform: rotate(-45deg);
+}
+
 
 .package-header {
   text-align: center;
@@ -1766,3 +1826,8 @@ input::placeholder {
     margin-bottom: 1rem;
   }
 }
+
+/* ============================
+ Blogs
+ ===================================== */
+ 

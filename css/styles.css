@@ -2005,9 +2005,9 @@ input::placeholder {
 
 .links > span {
   display: block;
-  max-height: 36px;
+  max-height: 38px;
   width: 100%;
-  max-width: 36px;
+  max-width: 38px;
   text-align: center;
 }
 .links > span > a > img {

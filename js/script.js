@@ -97,6 +97,71 @@ document.addEventListener("click", (e) => {
 });
 
 /*=============================
+Search Bar Toggler
+=====================*/
+// const searchButton = document.querySelector(".search-toggler"),
+//   searchContainer = document.querySelector(".input-box"),
+//   searchWrap = document.querySelector(".body");
+
+// // Toggle the search bar when the button is clicked
+// searchButton.addEventListener("click", function () {
+//   searchContainer.classList.toggle("hidden-search-bar");
+//   searchButton.classList.toggle("active");
+//   searchWrap.classList.toggle("search-on");
+//   searchBar.focus();
+// });
+
+// // Close the search bar when the user clicks outside
+// document.addEventListener("click", function (event) {
+//   const isClickInside =
+//     searchContainer.contains(event.target) ||
+//     searchButton.contains(event.target);
+//     // searchWrap.contains(event.target);
+//   if (!isClickInside) {
+//     searchButton.classList.remove("active");
+//     searchContainer.classList.add("hidden-search-bar");
+//     // searchWrap.classList.remove(".search-on");
+//   }
+// });
+
+const searchButton = document.querySelector(".search-toggler"),
+  searchContainer = document.querySelector(".input-box"),
+  searchWrap = document.querySelector(".body");
+
+// Toggle the search bar when the button is clicked
+searchButton.addEventListener("click", function (event) {
+  searchContainer.classList.toggle("hidden-search-bar");
+  searchButton.classList.toggle("active");
+  searchWrap.classList.toggle("search-on");
+
+  // Add or remove the blur class on the body
+  if (searchWrap.classList.contains("search-on")) {
+    searchWrap.classList.add("body-blur");
+  } else {
+    searchWrap.classList.remove("body-blur");
+  }
+
+  // Prevent the click event from propagating to the document
+  event.stopPropagation();
+});
+
+// Listen for clicks outside the search bar to close it
+document.addEventListener("click", function (event) {
+  const isClickInsideSearchBar = searchContainer.contains(event.target) || searchButton.contains(event.target);
+
+  if (!isClickInsideSearchBar && !searchContainer.classList.contains("hidden-search-bar")) {
+    searchContainer.classList.add("hidden-search-bar");
+    searchButton.classList.remove("active");
+    searchWrap.classList.remove("search-on", "body-blur");
+  }
+});
+
+// Assuming searchBar is declared somewhere in your code
+const searchBar = document.querySelector(".input-box input");
+
+
+
+/*=============================
 Slider Initializer
 =====================*/
 

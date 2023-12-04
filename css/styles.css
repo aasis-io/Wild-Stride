@@ -2025,3 +2025,90 @@ input::placeholder {
 }
 
 /*=============== SEARCH ===============*/
+.body-blur{
+  position: relative;
+}
+.body-blur::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px); /* Adjust the blur intensity as needed */
+  z-index: 999; /* Ensure the blurred overlay is on top of other content */
+  pointer-events: none;
+}
+
+.input-box > form {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.input-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 140px;
+  height: 56px;
+  max-width: 990px;
+  width: 90%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: 0.3s ease;
+  padding: 0 12px;
+}
+
+.input-box i {
+  font-size: 24px;
+  color: #707070;
+}
+.input-box form input {
+  height: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  background-color: transparent;
+  padding: 0 12px;
+  width: 100%;
+}
+.input-box .button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 6px;
+  background-color: var(--piction-color);
+  cursor: pointer;
+}
+.input-box .button:hover {
+  background-color: var(--accent-color);
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .input-box {
+    height: 56px;
+  }
+  .input-box i {
+    font-size: 25px;
+  }
+
+  .input-box .button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+.hidden-search-bar {
+  display: none;
+}

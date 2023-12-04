@@ -1918,6 +1918,16 @@ input::placeholder {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.office-detail:before{
+  content: "\f601";
+  position: absolute;
+  font-family: "FontAwesome";
+  top: 38px;
+  left: 2px;
+  font-size: 24px;
 }
 
 .footer .meta-title {

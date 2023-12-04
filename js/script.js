@@ -99,31 +99,6 @@ document.addEventListener("click", (e) => {
 /*=============================
 Search Bar Toggler
 =====================*/
-// const searchButton = document.querySelector(".search-toggler"),
-//   searchContainer = document.querySelector(".input-box"),
-//   searchWrap = document.querySelector(".body");
-
-// // Toggle the search bar when the button is clicked
-// searchButton.addEventListener("click", function () {
-//   searchContainer.classList.toggle("hidden-search-bar");
-//   searchButton.classList.toggle("active");
-//   searchWrap.classList.toggle("search-on");
-//   searchBar.focus();
-// });
-
-// // Close the search bar when the user clicks outside
-// document.addEventListener("click", function (event) {
-//   const isClickInside =
-//     searchContainer.contains(event.target) ||
-//     searchButton.contains(event.target);
-//     // searchWrap.contains(event.target);
-//   if (!isClickInside) {
-//     searchButton.classList.remove("active");
-//     searchContainer.classList.add("hidden-search-bar");
-//     // searchWrap.classList.remove(".search-on");
-//   }
-// });
-
 const searchButton = document.querySelector(".search-toggler"),
   searchContainer = document.querySelector(".input-box"),
   searchWrap = document.querySelector(".body");

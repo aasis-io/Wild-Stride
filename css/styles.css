@@ -2389,8 +2389,10 @@ Css for Single Page
 }
 
 .overview-wrap {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
 }
+
+
 
 .overview-wrap > ul {
   display: flex;
@@ -2438,9 +2440,12 @@ Css for Single Page
   color: var(--accent-color);
   font-weight: 700;
 }
-.advisor-wrap {
-  margin-top: 1rem;
+@media only screen and (min-width: 768px) {
+  .advisor-wrap {
+    margin-top: 1rem;
+  }
 }
+
 .advisor-wrap #CDSWIDSSP {
   width: 100% !important;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,

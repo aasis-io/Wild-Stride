@@ -2243,6 +2243,9 @@ Css for Single Page
 }
 
 @media only screen and (max-width: 768px) {
+  .breadcrumb {
+    display: none;
+  }
   .meta-duration-review > ul {
     flex-direction: column;
     gap: 8px;

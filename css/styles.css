@@ -2234,15 +2234,18 @@ Css for Single Page
   color: var(--orange-color);
 }
 @media only screen and (min-width: 768px) {
-  .meta-duration-review > ul {
-    flex-direction: column;
-    gap: 8px;
-  }
   .meta-duration-review > ul > li:first-child:after {
     content: "|";
     position: absolute;
     right: -14px;
     font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .meta-duration-review > ul {
+    flex-direction: column;
+    gap: 8px;
   }
 }
 

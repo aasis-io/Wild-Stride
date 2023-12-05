@@ -2236,6 +2236,7 @@ Css for Single Page
 @media only screen and (min-width: 768px) {
   .meta-duration-review > ul {
     flex-direction: column;
+    gap: 8px;
   }
   .meta-duration-review > ul > li:first-child:after {
     content: "|";

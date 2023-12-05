@@ -2274,6 +2274,7 @@ Css for Single Page
   margin: 2.2rem 0;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 .price-wrapper > ul > li {
   display: flex;

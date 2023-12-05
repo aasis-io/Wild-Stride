@@ -2234,6 +2234,9 @@ Css for Single Page
   color: var(--orange-color);
 }
 @media only screen and (min-width: 768px) {
+  .meta-duration-review > ul {
+    flex-direction: column;
+  }
   .meta-duration-review > ul > li:first-child:after {
     content: "|";
     position: absolute;

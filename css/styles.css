@@ -2221,6 +2221,7 @@ Css for Single Page
 .meta-duration-review > ul {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .meta-duration-review > ul > li {
@@ -2232,11 +2233,13 @@ Css for Single Page
   font-size: 14px;
   color: var(--orange-color);
 }
-.meta-duration-review > ul > li:first-child:after {
-  content: "|";
-  position: absolute;
-  right: -14px;
-  font-weight: 400;
+@media only screen and (min-width: 768px) {
+  .meta-duration-review > ul > li:first-child:after {
+    content: "|";
+    position: absolute;
+    right: -14px;
+    font-weight: 400;
+  }
 }
 
 .cta-price {

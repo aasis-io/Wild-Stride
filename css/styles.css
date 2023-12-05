@@ -2214,6 +2214,13 @@ Css for Single Page
 .single-wrapper > .title {
   margin: 0;
 }
+
+.small-title > h3 {
+  font-size: 24px;
+  color: var(--dark-accent);
+  font-weight: 700;
+}
+
 .meta-duration-review {
   padding: 0.6rem 0;
 }
@@ -2290,12 +2297,14 @@ Css for Single Page
   flex-wrap: wrap;
 }
 .price-wrapper > ul > li {
-  display: flex;
+  min-width: 260px;
+  line-height: 50px;
+  text-align: center;
 }
 .price-wrapper > ul > li > a {
+  display: block;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 14px 4rem;
   color: var(--white-color);
   background-color: var(--piction-color);
   border-radius: 2px;
@@ -2318,9 +2327,6 @@ Css for Single Page
   gap: 2rem;
   flex-wrap: wrap;
 }
-.meta-links > ul > li {
-  display: flex;
-}
 .meta-links > ul > li > a {
   font: 700 15px "Rubik", sans-serif;
   text-transform: uppercase;
@@ -2337,7 +2343,7 @@ Css for Single Page
   padding-right: 4px;
 }
 .enquiry {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .form-control {
   border: none;
@@ -2360,8 +2366,8 @@ Css for Single Page
 .box {
   padding: 24px;
   background: #fff;
-  -webkit-box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   border-radius: 2px;
 }
 .box h3 {
@@ -2380,4 +2386,66 @@ Css for Single Page
 
 .box input[type="submit"]:hover {
   background-color: var(--accent-color);
+}
+
+.overview-wrap {
+  padding: 2rem 1.5rem;
+}
+
+.overview-wrap > ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-items: space-evenly; */
+}
+
+@media only screen and (min-width: 576px) {
+  .facts-wrap li {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .facts-wrap li {
+    width: 33.3333333%;
+  }
+}
+
+@media only screen and (min-width: 1320px) {
+  .facts-wrap li {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .facts-wrap li {
+    width: 100%;
+  }
+}
+
+.facts-wrap dl {
+  position: relative;
+  padding-left: 48px;
+}
+.facts-wrap dl > dt > img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 4px;
+}
+
+.facts-wrap dl > dd {
+  font-size: 15px;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+.advisor-wrap {
+  margin-top: 1rem;
+}
+.advisor-wrap #CDSWIDSSP {
+  width: 100% !important;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+#CDSWIDSSP .withBorder {
+  border: none !important;
 }

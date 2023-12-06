@@ -2554,7 +2554,16 @@ Itinerary
   position: relative;
   background-color: transparent;
   border-bottom: 1px dashed #c8c8c8;
-  padding: .85rem 0;
+  padding: 0.85rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .itinerary-wrap .inner-wrap {
+    padding: 0 .5rem;
+  }
+  .itinerary-main .itinerary {
+    padding: 0;
+  }
 }
 
 .itinerary-main .itinerary:last-child {
@@ -2607,7 +2616,4 @@ Itinerary
   color: var(--text-color);
 
   font: 400 16px/1.8 "Roboto", sans serif;
-}
-.itinerary .itinerary-body p:last-child {
-  margin: 0;
 }

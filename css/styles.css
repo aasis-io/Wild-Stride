@@ -2524,3 +2524,90 @@ About Text
   color: var(--dark-accent);
   font-weight: 700;
 }
+
+/*==========
+Itinerary 
+==========*/
+.itinerary-wrap {
+  margin: 1rem 0;
+}
+
+.accordion-button {
+  box-shadow: none !important;
+}
+.accordion-button:after {
+  background-image: none !important;
+}
+
+.itinerary-wrap .inner-wrap {
+  padding: 0 1.5rem;
+  margin-bottom: 40px;
+}
+
+.itinerary-wrap .inner-wrap .itinerary-main {
+  margin: 0;
+  padding: 0;
+}
+.itinerary-main .itinerary {
+  border: none;
+  box-shadow: none;
+  position: relative;
+  background-color: transparent;
+  border-bottom: 1px dashed #c8c8c8;
+  padding: .85rem 0;
+}
+
+.itinerary-main .itinerary:last-child {
+  border: none;
+}
+.itinerary .head-it {
+  position: relative;
+  padding-right: 40px;
+}
+.itinerary .head-it a {
+  font: 600 16px/1.8 "Roboto", sans serif;
+  letter-spacing: 0.2px;
+  margin: 0;
+  display: block !important;
+  padding: 0;
+  position: relative;
+  border: 0;
+  background-color: transparent;
+  -webkit-transition: none;
+  transition: none;
+  color: var(--accent-color);
+}
+
+.itinerary .head-it a span {
+  font: 800 16px/1 "Roboto", sans serif;
+  color: var(--dark-accent);
+  padding-right: 10px;
+}
+.itinerary .head-it a[aria-expanded="true"]::after {
+  content: "\f068";
+  font-weight: 700;
+}
+.itinerary .head-it a::after {
+  position: absolute;
+  right: -35px;
+  top: 11px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.itinerary .itinerary-body {
+  padding: 8px 0;
+}
+.itinerary .itinerary-body p {
+  color: var(--text-color);
+
+  font: 400 16px/1.8 "Roboto", sans serif;
+}
+.itinerary .itinerary-body p:last-child {
+  margin: 0;
+}

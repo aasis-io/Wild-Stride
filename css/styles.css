@@ -2561,9 +2561,6 @@ Itinerary
   .itinerary-wrap .inner-wrap {
     padding: 0 .5rem;
   }
-  .itinerary-main .itinerary {
-    padding: 0;
-  }
 }
 
 .itinerary-main .itinerary:last-child {

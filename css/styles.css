@@ -2109,7 +2109,6 @@ input::placeholder {
 @media screen and (max-width: 991px) {
   .input-box {
     top: 90px;
-
     height: 56px;
   }
   .input-box i {
@@ -2130,9 +2129,13 @@ input::placeholder {
 Css for Single Page
 =============*/
 
+.roboto-font {
+  font-family: var(--secondary-font);
+}
+
 .banner {
   width: 100%;
-  height: 675px;
+  height: 650px;
 }
 
 .banner > img {
@@ -2175,6 +2178,10 @@ Css for Single Page
   }
 }
 
+/*==========
+BreadCrumb
+==========*/
+
 .breadcrumb {
   margin: 8px 0;
 }
@@ -2189,7 +2196,8 @@ Css for Single Page
 }
 
 .breadcrumb > ul > li > a {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
   color: var(--text-color);
 }
 
@@ -2213,6 +2221,10 @@ Css for Single Page
 
 .single-wrapper > .title {
   margin: 0;
+}
+
+.small-title {
+  margin-bottom: 1rem;
 }
 
 .small-title > h3 {
@@ -2258,6 +2270,10 @@ Css for Single Page
     gap: 8px;
   }
 }
+
+/*==========
+Pricing
+==========*/
 
 .cta-price {
   position: relative;
@@ -2322,6 +2338,9 @@ Css for Single Page
   background-color: var(--orange-color);
 }
 
+/*==========
+Buttons for Download and Share
+==========*/
 .meta-links > ul {
   display: flex;
   gap: 2rem;
@@ -2342,6 +2361,11 @@ Css for Single Page
   font-size: 22px;
   padding-right: 4px;
 }
+
+/*==========
+Enquiry Form
+==========*/
+
 .enquiry {
   margin: 1rem 0;
 }
@@ -2388,11 +2412,13 @@ Css for Single Page
   background-color: var(--accent-color);
 }
 
+/*==========
+Quick Trip Overview
+==========*/
+
 .overview-wrap {
-  padding: 2rem 1.5rem 0 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
-
-
 
 .overview-wrap > ul {
   display: flex;
@@ -2440,6 +2466,11 @@ Css for Single Page
   color: var(--accent-color);
   font-weight: 700;
 }
+
+/*==========
+Trip Advisor
+==========*/
+
 @media only screen and (min-width: 768px) {
   .advisor-wrap {
     margin-top: 1rem;
@@ -2453,4 +2484,43 @@ Css for Single Page
 }
 #CDSWIDSSP .withBorder {
   border: none !important;
+}
+
+/*==========
+Trip-Highlights
+==========*/
+
+.highlight-list {
+  font: 400 16px/1.8 "Roboto", sans serif;
+  color: var(--dark-color);
+}
+
+.highlight-list > li {
+  padding-left: 26px;
+  position: relative;
+  letter-spacing: 0.1px;
+}
+.highlight-list > li:before {
+  position: absolute;
+  content: "\f061";
+  font-family: "FontAwesome";
+  left: 6px;
+  font-size: 15px;
+  color: var(--accent-color);
+  top: 0.5px;
+}
+
+/*==========
+About Text
+==========*/
+
+.about-textWrap > p {
+  font: 400 16px/1.8 "Roboto", sans serif;
+  padding-bottom: 12px;
+}
+
+.about-textWrap > h3 {
+  font-size: 24px;
+  color: var(--dark-accent);
+  font-weight: 700;
 }

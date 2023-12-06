@@ -122,9 +122,14 @@ searchButton.addEventListener("click", function (event) {
 
 // Listen for clicks outside the search bar to close it
 document.addEventListener("click", function (event) {
-  const isClickInsideSearchBar = searchContainer.contains(event.target) || searchButton.contains(event.target);
+  const isClickInsideSearchBar =
+    searchContainer.contains(event.target) ||
+    searchButton.contains(event.target);
 
-  if (!isClickInsideSearchBar && !searchContainer.classList.contains("hidden-search-bar")) {
+  if (
+    !isClickInsideSearchBar &&
+    !searchContainer.classList.contains("hidden-search-bar")
+  ) {
     searchContainer.classList.add("hidden-search-bar");
     searchButton.classList.remove("active");
     searchWrap.classList.remove("search-on", "body-blur");
@@ -133,8 +138,6 @@ document.addEventListener("click", function (event) {
 
 // Assuming searchBar is declared somewhere in your code
 const searchBar = document.querySelector(".input-box input");
-
-
 
 /*=============================
 Slider Initializer

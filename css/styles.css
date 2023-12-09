@@ -2541,7 +2541,6 @@ Itinerary
 
 .itinerary-wrap .inner-wrap {
   padding: 0 1.5rem;
-  margin-bottom: 40px;
 }
 
 .itinerary-wrap .inner-wrap .itinerary-main {
@@ -2559,7 +2558,7 @@ Itinerary
 
 @media only screen and (max-width: 768px) {
   .itinerary-wrap .inner-wrap {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -2568,7 +2567,7 @@ Itinerary
 }
 .itinerary .head-it {
   position: relative;
-  padding-right: 40px;
+  padding-right: 32px;
 }
 .itinerary .head-it a {
   font: 600 16px/1.8 "Roboto", sans serif;
@@ -2595,7 +2594,7 @@ Itinerary
 }
 .itinerary .head-it a::after {
   position: absolute;
-  right: -35px;
+  right: -26px;
   top: 11px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2607,10 +2606,9 @@ Itinerary
 }
 
 .itinerary .itinerary-body {
-  padding: 8px 0;
+  padding: 8px 8px 8px 0;
 }
 .itinerary .itinerary-body p {
   color: var(--text-color);
-
   font: 400 16px/1.8 "Roboto", sans serif;
 }

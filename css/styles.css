@@ -390,6 +390,21 @@ NAVBAR START
   .mega-menu > .dropdown.active .dropdown-menu {
     display: block;
   }
+
+  .dropdown > .dropdown-menu {
+    padding-left: 16px;
+  }
+
+  .dropdown > .dropdown-menu a {
+    padding: 8px 20px;
+    font-size: 15px;
+    display: block;
+    color: var(--white-color);
+  }
+
+  .dropdown > .dropdown-menu a:hover {
+    color: var(--piction-color);
+  }
 }
 @media (min-width: 991px) {
   .mega-menu > .dropdown > .dropdown-menu {
@@ -422,6 +437,24 @@ NAVBAR START
     right: 0;
     padding: 0 7px;
     max-width: 900px;
+  }
+  .dropdown > .dropdown-menu {
+    border-radius: 4px !important;
+  }
+
+  .dropdown > .dropdown-menu > li {
+    min-width: 220px;
+  }
+
+  .dropdown > .dropdown-menu a {
+    padding: 8px 20px;
+    font-size: 15px;
+    display: block;
+    color: var(--white-color);
+  }
+
+  .dropdown > .dropdown-menu a:hover {
+    color: var(--piction-color);
   }
 }
 

@@ -2641,7 +2641,46 @@ Itinerary
 .itinerary .itinerary-body {
   padding: 8px 8px 8px 0;
 }
-.itinerary .itinerary-body p {
+.itinerary .itinerary-body > p {
   color: var(--text-color);
   font: 400 16px/1.8 "Roboto", sans serif;
+}
+
+/*=====
+Cost Details
+=====*/
+
+.inside-wrap{
+  padding: .5rem .8rem;
+}
+.inside-wrap > h4 {
+  color: var(--dark-accent);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.inside-wrap > ul > li {
+  display: block;
+  padding-left: 28px;
+  position: relative;
+  font: 400 16px/1.8 "Roboto", sans serif;
+  letter-spacing: 0.2px;
+}
+
+.include-wrapper > ul > li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: var(--green-color);
+  position: absolute;
+  left: 6px;
+}
+
+
+.exclude-wrapper > ul > li:before {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  color: var(--red-color);
+  position: absolute;
+  left: 6px;
 }

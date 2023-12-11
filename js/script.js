@@ -1,4 +1,20 @@
 /*=============================
+JS Image Opener
+=====================*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fullscreenImages = document.querySelectorAll(".fullscreen-image");
+
+  fullscreenImages.forEach(function (fullscreenImage) {
+    fullscreenImage.addEventListener("click", function () {
+      fullscreenImage.classList.toggle("fullscreen");
+      document.body.style.overflow =
+        document.body.style.overflow === "hidden" ? "" : "hidden";
+    });
+  });
+});
+
+/*=============================
 Main - Dropdown Toggler
 =====================*/
 
@@ -147,9 +163,9 @@ new Splide(".splide", {
   type: "fade",
   speed: 1600,
   rewind: true,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   dragMinThreshold: {
     mouse: 400,
     touch: 10,

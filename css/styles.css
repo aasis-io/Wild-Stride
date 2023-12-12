@@ -2732,10 +2732,6 @@ Trek Gallery=====
 */
 
 
-
-
-
-
 .image-item {
   position: relative;
   width: 100%;
@@ -2771,3 +2767,162 @@ Trek Gallery=====
   z-index: 2;
   cursor: zoom-out;
 }
+
+
+
+
+
+
+
+
+
+.mt--40 {
+  margin-top: 40px !important;
+}
+.mb--20 {
+  margin-bottom: 20px !important;
+}
+.pt--40 {
+  padding-top: 40px !important;
+}
+.mb--25 {
+  margin-bottom: 25px !important;
+}
+.fa-star {
+  color: #ffa41b;
+}
+.course-details-card {
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  padding: 30px;
+}
+.course-details-card .course-details-two-content p:last-child {
+  margin-bottom: 0;
+}
+
+.course-details-content .rating-box {
+  background: #ffffff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  text-align: center;
+  min-width: 200px;
+  padding: 29px 10px;
+}
+.course-details-content .rating-box .rating-number {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 90px;
+  color: #231f40;
+}
+.course-details-content .rating-box span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+.course-details-content .course-tab-content {
+  margin-top: 40px;
+}
+.course-details-content .rating-box {
+  background: #ffffff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  text-align: center;
+  min-width: 200px;
+  padding: 29px 10px;
+}
+.course-details-content .rating-box .rating-number {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 90px;
+  color: #231f40;
+}
+.course-details-content .rating-box span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.review-wrapper .single-progress-bar {
+  position: relative;
+}
+
+.review-wrapper .rating-text {
+  display: inline-block;
+  position: relative;
+  top: 19px;
+}
+
+.review-wrapper .progress {
+  max-width: 83%;
+  margin-left: 38px;
+  height: 12px;
+  background: #eeeeee;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .review-wrapper .progress {
+    max-width: 80%;
+  }
+}
+.review-wrapper .progress .progress-bar {
+  background-color: #ffa41b;
+}
+
+.review-wrapper span.rating-value {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.edu-comment {
+  display: flex;
+}
+@media only screen and (max-width: 575px) {
+  .edu-comment {
+    flex-direction: column;
+  }
+}
+.edu-comment .thumbnail {
+  min-width: 70px;
+  width: 70px;
+  max-height: 70px;
+  border-radius: 100%;
+  margin-right: 25px;
+}
+.edu-comment .thumbnail img {
+  border-radius: 100%;
+  width: 100%;
+}
+.edu-comment .comment-content .comment-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.edu-comment .comment-content .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  margin-right: 15px;
+}
+.edu-comment .comment-content > p{
+  font: 400 16px/1.6 "Roboto", sans-serif;
+  letter-spacing: .2px;
+}
+.edu-comment .comment-content .subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  margin-bottom: 10px;
+  color: #231f40;
+}
+@media only screen and (max-width: 575px) {
+  .edu-comment .comment-content {
+    margin-top: 20px;
+  }
+}
+.edu-comment + .edu-comment {
+  border-top: 1px solid #eeeeee;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
